@@ -3,10 +3,6 @@
 **Proyecto Integrado ASIR**  
 **Instalación y administración de IDS Suricata + Honeypot T-Pot en Debian 13,junto a un servidor WEB y demostracion de ataque al entorno**
 
-## Autores
-- **Alumno 1**: Raul Yerga Blanco → Responsable de Suricata (IDS) + Nginx(HTTP) + pruebas de ataques
-- **Alumno 2**: Cesar Acevedo Gomez → Responsable de T-Pot (Honeypot) + HAProxy (balanceador de carga)+ scripts de alertas
-
 ## Objetivo del proyecto
 Desplegar un sistema completo de detección de intrusiones (Suricata) y honeypot (T-Pot) en Debian 13 para monitorizar y analizar ataques en una red.
 Realizar ataque de prueba hacia el IDS y probar la efectividad de las alertas y los bloqueos.
