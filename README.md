@@ -19,12 +19,15 @@ Realizar ataques de prueba hacia el IDS y probar la efectividad de las alertas y
 - VirtualBox
 
 ## Estructura del repositorio
-- `/config/suricata` → Reglas y configuración de Suricata
-- `/config/haproxy`  → Configuración de HAProxy
-- `/scripts`         → Scripts de alertas (Telegram + Email)
-- `/capturas`        → Pantallazos de pruebas y funcionamiento
-- `/docs`            → Documentación técnica
-- `/memoria`         → Propuesta PI y memoria final
+- `/Presentacion`        → Presentación del proyecto
+- `/capturas`            → Pantallazos de pruebas y funcionamiento
+- `/config/suricata`     → Reglas y configuración de Suricata
+- `/config/haproxy`      → Configuración de HAProxy
+- `/config/fail2ban`     → Configuración de Fail2ban y filtro para Suricata
+- `/config/nginx`        → Páginas web del servidor principal y secundario
+- `/config/systemd`      → Servicio de arranque automático de alertas
+- `/scripts`             → Scripts de alertas (Telegram + Email)
+- `/documentacion`       → Memoria final del proyecto
 
 ## Cómo probar el proyecto
 1. Arrancar las dos VMs con Debian 13
