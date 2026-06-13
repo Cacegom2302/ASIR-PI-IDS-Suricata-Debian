@@ -1,1 +1,34 @@
+# =============================================================
+#  Fail2ban — jail.local
+#  Proyecto Integrado ASIR — César Acevedo Gomez
+#  IES Fuengirola 1 — 2025/2026
+# =============================================================
+
+[DEFAULT]
+banaction         = iptables-multiport
+banaction_allports = iptables-allports
+bantime           = 3600
+findtime          = 600
+maxretry          = 5
+ignoreip          = 127.0.0.1/8 192.168.1.0/24
+
+[sshd]
+enabled  = true
+backend  = systemd
+maxretry = 5
+
+[openhab-auth]
+enabled = false
+
+[selinux-ssh]
+enabled = false
+
+[suricata]
+enabled  = true
+filter   = suricata
+logpath  = /var/log/suricata/fast.log
+maxretry = 10
+bantime  = 3600
+findtime = 30
+action   = iptables-multiport[name=suricata, port="80,8080,22", protocol=tcp]
 
