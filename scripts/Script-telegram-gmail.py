@@ -9,12 +9,12 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 # ── CONFIGURACIÓN ──────────────────────────────────────────
-TELEGRAM_TOKEN  = "8240407473:AAH-xOWfBMu1t6ZNyk9HfW1yq59kL-1G5AE"
-TELEGRAM_CHAT_ID = "1476121883"
+TELEGRAM_TOKEN  = "8240407473:AAH-xOWfBMu1t6ZNyk9HfW1yq59kL-xxxxx"
+TELEGRAM_CHAT_ID = "1476121xxx"
 
 EMAIL_ORIGEN  = "caesaracevedo03@gmail.com"
 EMAIL_DESTINO = "caesaracevedo03@gmail.com"
-EMAIL_PASSWORD = "xslw pwlm udah bxsk"
+EMAIL_PASSWORD = "xslw pwlm xxxx xxxx"
 
 LOG_SURICATA = "/var/log/suricata/fast.log"
 # ───────────────────────────────────────────────────────────
