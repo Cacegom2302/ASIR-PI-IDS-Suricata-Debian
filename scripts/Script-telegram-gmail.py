@@ -9,7 +9,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 # ── CONFIGURACIÓN ──────────────────────────────────────────
-TELEGRAM_TOKEN  = "8240407473:AAH-xOWfBMu1t6ZNyk9HfW1yq59kL-xxxxx"
+TELEGRAM_TOKEN  = "82xxxxx7473:AAH-xxxxxxxxxt6ZNyk9Hfxxx59kL-xxxxx"
 TELEGRAM_CHAT_ID = "1476121xxx"
 
 EMAIL_ORIGEN  = "caesaracevedo03@gmail.com"
