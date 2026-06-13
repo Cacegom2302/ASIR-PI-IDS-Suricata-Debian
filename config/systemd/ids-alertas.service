@@ -1,1 +1,25 @@
+# =============================================================
+#  Systemd service — ids-alertas.service
+#  Arranca automáticamente el script de alertas con el sistema
+#  Proyecto Integrado ASIR — César Acevedo Gomez
+#  IES Fuengirola 1 — 2025/2026
+#
+#  Instalación:
+#    cp ids-alertas.service /etc/systemd/system/
+#    systemctl daemon-reload
+#    systemctl enable ids-alertas
+#    systemctl start ids-alertas
+# =============================================================
 
+[Unit]
+Description=IDS Alertas Suricata - Telegram y Email
+After=network.target suricata.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/ids-alertas/alertas.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
