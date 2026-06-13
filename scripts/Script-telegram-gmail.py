@@ -41,6 +41,7 @@ def enviar_email(asunto, cuerpo):
     except Exception as e:
         print(f"[ERROR Email] {e}")
 
+##────La alerta del correo , y el telegram ──────────────────────────────────────────────
 def monitorear():
     print("[*] Monitoreando Suricata - alertas activas...")
     with open(LOG_SURICATA, "r") as f:
